@@ -1,0 +1,364 @@
+/* Project Detail Page Styles */
+
+/* Header spacing to account for fixed navbar */
+.project-detail {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.project-header h1 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.project-meta i {
+    margin-right: 8px;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+@media (min-width: 992px) {
+    .project-container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* Project Images */
+.project-image-gallery {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+}
+
+.main-project-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    border-color: var(--secondary-color);
+}
+
+/* Project Content */
+.project-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.project-section:last-child {
+    border-bottom: none;
+}
+
+.project-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.project-section h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: -10px;
+    left: 0;
+}
+
+.project-section h3 {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin: 20px 0 15px;
+}
+
+.project-section p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.project-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.project-list li::before {
+    content: '•';
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Timeline Steps */
+.project-timeline {
+    margin: 30px 0;
+}
+
+.timeline-step {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: var(--secondary-color);
+}
+
+.timeline-step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.timeline-step-content {
+    flex: 1;
+}
+
+.timeline-step-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Actors */
+.project-actors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.actor {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.actor i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.actor h3 {
+    margin: 10px 0;
+}
+
+/* Results and Consequences */
+.results-grid,
+.consequences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.result-item,
+.consequence-item {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.result-item h3,
+.consequence-item h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+/* Lessons Learned */
+.lessons-learned {
+    margin-top: 20px;
+}
+
+.lesson {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.lesson i {
+    color: var(--secondary-color);
+    margin-right: 15px;
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+/* Related Skills */
+.related-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.related-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.related-skill {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.related-skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.related-skill i {
+    margin-right: 10px;
+}
+
+/* Project Navigation */
+.project-navigation {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 30px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.back-to-projects {
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.back-to-projects:hover {
+    color: var(--secondary-color);
+}
+
+.project-nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+    transition: var(--transition);
+}
+
+.nav-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.nav-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-button.disabled:hover {
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .project-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .project-image-gallery {
+        position: static;
+    }
+    
+    .project-navigation {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .project-nav-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

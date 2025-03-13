@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projet POPSOFT</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/realisation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .skill-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .skill-button {
+            display: inline-block;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .skill-button:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">Portfolio</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html#about">À propos</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../index.html#projects">Réalisations</a></li>
+            <li><a href="../index.html#experience">Parcours</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Realisation Detail -->
+    <section class="section realisation-detail">
+        <div class="section-container">
+            <div class="realisation-header">
+                <h1>POPSOFT</h1>
+                <p>Automatisation du téléchargement de catalogue de composants informatiques</p>
+            </div>
+
+            <div class="realisation-sections">
+                <div class="realisation-image">
+                    <img src="../images/POPSOFT.webp" alt="Projet POPSOFT">
+                </div>
+                
+                <div class="realisation-section">
+                    <h2>Mission</h2>
+                    <p>FDS Informatique, une société spécialisée dans la vente de composants informatiques, a sollicité l'équipe Popsoft pour automatiser le téléchargement du catalogue de son grossiste via une application web. L'objectif principal était de simplifier le processus et d'améliorer l'ergonomie du travail en permettant une récupération automatisée des données du fournisseur.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Technologies</h2>
+                    <p>Nous avons utilisé Angular pour le front-end de l'application, un front-end très léger. Par la suite, le plus gros de l'application est fait en Java car il fallait récupérer les données vers la base d'un grossiste et faire un algorithme pour exporter ces données vers un Excel.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Client</h2>
+                    <p>FDS informatique est un revendeur de composants informatiques en général. Il propose aussi des services pour des réparations générales dans ce milieu.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Objectifs, contexte et enjeux</h2>
+                    <p>Le principal défi du projet était d'intégrer un système de récupération des données en production via une clé FTP, une approche totalement nouvelle pour notre équipe et inédite dans notre cursus. Ce projet représentait donc une opportunité d'apprentissage technique, nécessitant une compréhension approfondie des protocoles FTP et des échanges de données en environnement de production.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Rôle dans le projet</h2>
+                    <p>En tant que développeur Full Stack Angular/Java, j'ai participé activement à la conception et à la mise en place de cette automatisation. Mon travail a consisté à développer les fonctionnalités permettant d'extraire et de traiter les données du fournisseur tout en assurant leur transfert vers un fichier Excel utilisable par l'entreprise.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Processus de développement</h2>
+                    <p>Le projet a été mené en méthodologie Agile, avec une approche itérative permettant de valider régulièrement les développements auprès du client. Après chaque sprint, des phases de tests en production et de déploiement ont été effectuées afin d'assurer la fiabilité du système et son intégration fluide dans les processus existants de l'entreprise.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <p>L'application développée permet la récupération automatisée des données du grossiste via FTP et leur transfert structuré vers un fichier Excel. Ce processus a considérablement amélioré la gestion du catalogue en supprimant les étapes manuelles et en garantissant une mise à jour rapide et fiable des informations produits.</p>
+                </div>
+
+                <div class="realisation-section">
+                    <h2>Compétences associées</h2>
+                    <p>Ce projet m'a permis d'acquérir de nouvelles compétences, notamment sur l'exploitation des protocoles FTP en environnement de production et l'automatisation des échanges de données. Travailler en Angular et Java dans un contexte de développement Full Stack m'a également permis de renforcer mes compétences techniques et ma capacité à m'adapter à de nouveaux défis.</p>
+                    <div class="skill-buttons-container">
+                        <a href="../competences/java.html" class="skill-button">Java</a>
+                        <a href="../competences/angular.html" class="skill-button">Angular</a>
+                        <a href="../competences/base-de-donnees.html" class="skill-button">Base de données</a>
+                    </div>
+                </div>
+
+                <div class="realisation-section conclusion-section">
+                    <h2>Conclusion</h2>
+                    <p>L'interaction directe avec le client a été un aspect clé du projet, me permettant d'améliorer ma communication et ma capacité à adapter les développements aux besoins réels de l'entreprise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Portfolio</h3>
+                    <p>Développeur Full Stack</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html#about">À propos</a></li>
+                        <li><a href="../index.html#skills">Compétences</a></li>
+                        <li><a href="../index.html#projects">Réalisations</a></li>
+                        <li><a href="../index.html#experience">Parcours</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +33 6 12 34 56 78</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* Styles pour les pages de réalisations */
+.realisation-detail {
+    padding: 80px 0;
+}
+
+.realisation-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.realisation-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.realisation-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.realisation-image {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.realisation-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.realisation-sections {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.realisation-section {
+    margin-bottom: 40px;
+}
+
+.realisation-section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.realisation-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.realisation-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.competences-associees {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.competence-item {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.competence-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.competence-item p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
+.related-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.related-skill-link {
+    display: inline-block;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.related-skill-link:hover {
+    background-color: #d6e0e4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conclusion-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.conclusion-section h2 {
+    border-bottom-color: #e74c3c;
+}
+
+.skill-button {
+    display: inline-block;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-button:hover {
+    background-color: #d6e0e4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .realisation-header h1 {
+        font-size: 2rem;
+    }
+    
+    .realisation-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .realisation-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .realisation-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .realisation-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .competences-associees {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .competence-item {
+        width: 100%;
+    }
+}
