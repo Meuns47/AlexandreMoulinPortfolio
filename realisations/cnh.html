@@ -37,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="../index.html">Portfolio</a>
+            <a href="../index.html">Alexandre Moulin</a>
         </div>
         <ul class="nav-links">
             <li><a href="../index.html#about">À propos</a></li>
@@ -58,7 +58,7 @@
         <div class="section-container">
             <div class="realisation-header">
                 <h1>CNH</h1>
-                <p>Développement d'une application de gestion des ressources agricoles et de construction</p>
+                <p>Connected Service - Gestion des véhicules agricoles et de construction</p>
             </div>
 
             <div class="realisation-sections">
@@ -67,44 +67,47 @@
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Mission</h2>
-                    <p>CNH est une filiale du groupe FIAT spécialisée dans les secteurs de l'agriculture et de la construction. L'entreprise repose sur plusieurs modules permettant d'optimiser l'administration et la gestion de ses activités. Parmi eux, le module Connected Service joue un rôle clé en assurant le référencement et la maintenance des véhicules agricoles et de construction.</p>
-                    <p>L'objectif principal de l'équipe Connected Service est d'implémenter de nouvelles fonctionnalités pour faciliter l'administration des véhicules tout en garantissant la performance et la pérennité de l'application.</p>
+                    <h2>Présentation et définition du projet ou de la réalisation</h2>
+                    <p>Le projet Connected Service s'inscrit dans la stratégie de transformation numérique de CNH Industrial, une filiale du groupe FIAT spécialisée dans la conception, la fabrication et la maintenance d'engins agricoles et de construction. Cette entreprise de dimension mondiale s'appuie sur des solutions logicielles avancées pour optimiser la gestion de ses véhicules, assurer leur traçabilité et anticiper les opérations de maintenance, grâce à l'exploitation de données télématiques.</p>
+                    <p>Parmi les différents modules qui composent le système d'information de CNH, le module Connected Service joue un rôle fondamental. Il permet de référencer, suivre et gérer à distance les véhicules de la marque, répartis sur les cinq continents. L'application web qui en découle est utilisée quotidiennement par des équipes techniques, commerciales et logistiques. Le projet auquel j'ai participé visait à développer de nouvelles fonctionnalités, maintenir les modules existants et améliorer continuellement la performance globale de l'application.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Technologies</h2>
-                    <p>Le projet est développé sur plusieurs technologies : pour le back-end on utilise Java ainsi que son framework Spring, pour la partie front on utilise Angular.js et Angular.ts. L'application possède un large éventail de design patterns ce qui en fait un premier choix en apprentissage.</p>
+                    <h2>Objectifs, contexte, enjeux, risques</h2>
+                    <p>Le projet Connected Service a vu le jour il y a plus de 25 ans. Il repose sur une architecture technique particulièrement dense et ancienne, dans laquelle coexistent plusieurs couches logicielles, technologies et design patterns. Cette ancienneté constitue à la fois une richesse et un défi : l'héritage applicatif impose une rigueur dans la maintenance, une compréhension fine des dépendances, ainsi qu'une capacité à refondre certains composants sans compromettre la stabilité globale du système.</p>
+                    <p>L'objectif stratégique est double : moderniser progressivement l'application sans interruption de service, et garantir l'ajout régulier de nouvelles fonctionnalités à forte valeur ajoutée, comme l'intégration de services prédictifs de maintenance, ou l'optimisation de la gestion de flotte par géolocalisation.</p>
+                    <p>Les enjeux techniques sont considérables : l'application doit gérer des volumes élevés de données télémétriques issues de capteurs intégrés aux véhicules CNH (tracteurs, moissonneuses-batteuses, chargeuses…), tout en maintenant une accessibilité fluide sur un réseau international. L'un des risques majeurs identifiés est l'effet de "debt technologique" lié à des composants obsolètes ou difficilement maintenables, ainsi qu'une perte de performance due à la complexité croissante du code source au fil des évolutions successives.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Client</h2>
-                    <p>CNH a fait appel à l'entreprise CAPGEMINI pour continuer le développement de son application afin d'implémenter de nouvelles fonctionnalités modernes.</p>
+                    <h2>Étapes</h2>
+                    <p>Dès le début de mon alternance chez CAPGEMINI, j'ai été intégré à une équipe internationale chargée de la maintenance évolutive et corrective du module Connected Service. Le projet s'appuyait sur un backend Java basé sur le framework Spring Boot, associé à un frontend en Angular.js pour les anciennes parties, et en Angular TypeScript pour les modules les plus récents. Ce mix technologique m'a permis d'explorer différents design patterns (DAO, MVC, Singleton, Observer…) et d'approfondir mes connaissances en architecture distribuée.</p>
+                    <p>Mon travail a d'abord consisté à m'approprier l'existant à travers l'analyse de la documentation technique, la compréhension des schémas de base de données et l'étude des APIs exposées. J'ai ensuite été mobilisé sur le développement de nouvelles fonctionnalités, comme l'amélioration du tableau de bord de localisation des véhicules via Google Maps API, ou la création d'un module de diagnostic en temps réel des composants électroniques des véhicules. Pour cela, j'ai conçu et intégré de nouveaux services REST, adapté les composants Angular correspondants et réalisé des tests unitaires (JUnit pour le backend, Jasmine/Karma pour le frontend).</p>
+                    <p>Parallèlement, j'ai contribué à la correction de bugs récurrents, identifiés par les utilisateurs via la plateforme JIRA. J'ai également été chargé de refactoriser certaines portions du code afin d'améliorer la lisibilité, la performance et la maintenabilité, notamment dans des classes Java vieillissantes dépassant les 1 500 lignes de code.</p>
+                    <p>Les développements étaient découpés en sprints de deux semaines, selon la méthode Agile SCRUM. Chaque sprint débutait par une réunion de planification et se terminait par une démonstration au Product Owner. J'étais également impliqué dans les revues de code, les déploiements sur l'environnement de recette, et l'intégration continue via GitLab CI/CD.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Objectifs, contexte et enjeux</h2>
-                    <p>Avec ses 26 ans d'existence, le projet CNH représente un véritable défi technique en raison de sa complexité et de la nécessité d'assurer sa maintenance et son évolution. Chaque jour, l'équipe est confrontée à des problématiques techniques nécessitant une grande capacité d'adaptation et une recherche constante de solutions innovantes. L'objectif est de répondre efficacement aux attentes du client tout en maintenant la stabilité et la performance de l'application.</p>
+                    <h2>Acteurs et interactions</h2>
+                    <p>Le projet réunissait des collaborateurs répartis dans plusieurs pays : développeurs et chefs de projet en France (CAPGEMINI), équipes de validation en Inde, et représentants métiers côté client en Italie, au siège de CNH. Les échanges se faisaient principalement en anglais via Teams, avec des réunions quotidiennes (daily meetings) et des points hebdomadaires sur l'avancement global.</p>
+                    <p>Mon rôle m'a amené à interagir régulièrement avec des experts techniques seniors, ainsi qu'avec les responsables fonctionnels côté client. Cette diversité d'interlocuteurs a renforcé ma capacité d'adaptation et m'a permis d'évoluer dans un environnement interculturel, où la communication claire et structurée était essentielle pour assurer le bon déroulement des développements.</p>
+                    <p>J'ai également eu l'opportunité d'animer des mini-formations internes à destination de nouveaux arrivants dans l'équipe. J'ai notamment préparé et dispensé des sessions sur la structure de l'application, l'utilisation du framework Spring, ainsi que les bonnes pratiques Git et Angular.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Rôle dans le projet</h2>
-                    <p>En tant qu'alternant développeur Full Stack, j'ai participé activement à l'évolution du projet en développant et en améliorant les différentes fonctionnalités de l'application. Mon travail consistait à concevoir des solutions techniques adaptées, à corriger les anomalies existantes et à optimiser les performances de l'application en collaboration avec l'équipe.</p>
+                    <h2>Résultats</h2>
+                    <p>À l'issue de mon intervention, plusieurs fonctionnalités majeures ont été mises en production et utilisées par les clients finaux. Les tableaux de bord de géolocalisation ont gagné en lisibilité et en performance, les modules de diagnostic ont permis une meilleure anticipation des pannes, et la documentation technique a été complétée pour faciliter la montée en compétence de nouveaux développeurs.</p>
+                    <p>D'un point de vue personnel, cette expérience m'a permis de renforcer mes compétences en développement Full Stack, d'approfondir ma maîtrise des frameworks Spring et Angular, et d'évoluer dans un cadre agile structuré, avec des standards de qualité élevés. J'ai également perfectionné mon anglais professionnel, aussi bien à l'oral qu'à l'écrit, à travers des réunions, de la rédaction technique et des échanges quotidiens.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Processus de développement</h2>
-                    <p>Le projet suit une approche Agile, avec des sprints de deux semaines permettant d'assurer un suivi régulier des avancées et d'ajuster les développements en fonction des retours clients et des évolutions techniques.</p>
-                </div>
-
-                <div class="realisation-section">
-                    <h2>Fonctionnalités principales</h2>
-                    <p>L'une des principales fonctionnalités de Connected Service est la capacité à référencer et localiser chaque véhicule CNH à travers le monde. Grâce à des capteurs électroniques intégrés, l'application permet également de vérifier l'état des composants et d'anticiper d'éventuelles interventions de maintenance.</p>
+                    <h2>Lendemains du projet</h2>
+                    <p>À la suite de mon implication dans le projet, j'ai laissé une base de code proprement commentée et documentée, facilitant la reprise par d'autres développeurs. Plusieurs de mes propositions d'optimisation ont été intégrées à la roadmap technique, notamment le remplacement progressif des composants Angular.js par Angular.ts.</p>
+                    <p>Le module Connected Service continue d'évoluer avec l'ajout de briques d'intelligence artificielle visant à améliorer la maintenance prédictive, et l'introduction de fonctionnalités basées sur le machine learning pour analyser les données remontées par les capteurs embarqués. Le projet, par sa longévité et son ampleur, constitue un socle de référence au sein de CNH, et une vitrine du savoir-faire technique de CAPGEMINI.</p>
                 </div>
 
                 <div class="realisation-section">
                     <h2>Compétences associées</h2>
-                    <p>Ce projet m'a permis de renforcer mes compétences techniques en développement Full Stack et en gestion de bases de données, tout en améliorant ma maîtrise de Git et de Java. L'environnement international m'a également offert l'opportunité de perfectionner mon anglais, en collaborant avec des clients italiens et des développeurs indiens.</p>
                     <div class="skill-buttons-container">
                         <a href="../competences/java.html" class="skill-button">Java</a>
                         <a href="../competences/base-de-donnees.html" class="skill-button">Base de données</a>
@@ -116,8 +119,9 @@
                 </div>
 
                 <div class="realisation-section conclusion-section">
-                    <h2>Conclusion</h2>
-                    <p>En parallèle de mes missions techniques, j'ai également pu développer ma vocation pour la formation en animant des sessions d'apprentissage pour les membres de mon équipe sur divers aspects de l'application. Cette expérience a renforcé mon autonomie et ma capacité à transmettre des connaissances de manière efficace.</p>
+                    <h2>Mon regard critique</h2>
+                    <p>Cette réalisation m'a apporté une vision concrète des enjeux de la modernisation d'une application industrielle à grande échelle. Elle m'a permis de mesurer l'importance de la qualité de code, de la documentation et des processus agiles dans des projets de longue durée. J'ai appris à naviguer dans une architecture logicielle complexe, à faire preuve de rigueur, et à collaborer efficacement dans un environnement interculturel.</p>
+                    <p>Au-delà des compétences techniques, cette expérience a renforcé ma capacité à transmettre mes connaissances, à vulgariser des notions complexes et à accompagner des collègues dans leur montée en compétence. Elle a confirmé mon attrait pour les projets à forte dimension technique et organisationnelle, dans lesquels je peux avoir un impact direct sur la fiabilité et la performance d'un système métier.</p>
                 </div>
             </div>
         </div>
@@ -128,7 +132,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Portfolio</h3>
+                    <h3>Alexandre Moulin</h3>
                     <p>Développeur Full Stack</p>
                 </div>
                 <div class="footer-links">

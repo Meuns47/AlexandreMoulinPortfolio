@@ -728,6 +728,123 @@ img {
 }
 
 /* Experience Section */
+/* Parcours Style */
+.parcours-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.parcours-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.parcours-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parcours-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.parcours-logo {
+    width: 120px;
+    height: 90px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parcours-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.parcours-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.parcours-date {
+    background-color: #1e2a3a;
+    color: white;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.parcours-description {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.parcours-btn {
+    display: inline-block;
+    background-color: #1e2a3a;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.parcours-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.parcours-line {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: #333;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 992px) {
+    .parcours-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .parcours-card {
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .parcours-line {
+        display: none;
+    }
+}
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -912,71 +1029,168 @@ img {
     }
 }
 
-/* Experience Section - Timeline Vertical */
-.timeline-vertical {
-    position: relative;
+/* Parcours style */
+.parcours-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0 60px;
+    margin: 40px auto 60px;
+    padding: 20px 0;
 }
 
-.timeline-line {
-    position: absolute;
-    width: 4px;
-    background-color: var(--secondary-color);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+.parcours-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px 20px;
+    width: 280px;
+    text-align: center;
 }
 
-.timeline-point {
-    position: relative;
-    z-index: 2;
+.parcours-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 40px;
+    height: 80px;
+    margin-bottom: 25px;
 }
 
-.timeline-point.top {
+.parcours-logo img {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.parcours-org {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.timeline-point.middle {
-    margin: 40px 0;
-}
-
-.timeline-point.bottom {
-    margin-top: 20px;
-}
-
-.timeline-dot {
-    width: 20px;
-    height: 20px;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    z-index: 3;
-}
-
-.timeline-date-marker {
-    position: absolute;
-    width: 120px;
-    height: 40px;
-    background-color: var(--secondary-color);
-    border-radius: 20px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.timeline-date-marker span {
+.parcours-date {
+    background-color: #1a2e44;
     color: white;
     font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
     font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.parcours-title {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.parcours-btn {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.parcours-btn:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.parcours-separator {
+    width: 50px;
+    position: relative;
+    align-self: center;
+}
+
+.parcours-separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+}
+
+/* Responsive styles for parcours */
+@media (max-width: 992px) {
+    .parcours-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .parcours-separator {
+        width: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .parcours-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .parcours-card {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .parcours-separator {
+        width: 2px;
+        height: 40px;
+    }
+    
+    .parcours-separator::after {
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .parcours-card {
+        padding: 20px 15px;
+        max-width: 280px;
+    }
+    
+    .parcours-logo {
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    
+    .parcours-logo img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+    
+    .parcours-org {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .parcours-date {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+        margin-bottom: 15px;
+    }
+    
+    .parcours-title {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .parcours-btn {
+        font-size: 0.85rem;
+    }
 }
 
 .timeline-card {
@@ -1161,6 +1375,123 @@ img {
 .social-link:hover {
     background-color: var(--primary-color);
     transform: translateY(-5px);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        transform: translateY(-150%);
+        transition: var(--transition);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        left: 70px;
+        top: -25px;
+        position: relative;
+    }
 }
 
 .contact-form {

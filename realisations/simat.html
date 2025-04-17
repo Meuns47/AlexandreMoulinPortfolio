@@ -37,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="../index.html">Portfolio</a>
+            <a href="../index.html">Alexandre Moulin</a>
         </div>
         <ul class="nav-links">
             <li><a href="../index.html#about">À propos</a></li>
@@ -58,7 +58,7 @@
         <div class="section-container">
             <div class="realisation-header">
                 <h1>SIMAT</h1>
-                <p>Système d'information pour la maintenance des appareils de transmission</p>
+                <p>Système d'Information de Maintenance de l'Armée de Terre</p>
             </div>
 
             <div class="realisation-sections">
@@ -67,43 +67,45 @@
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Mission</h2>
-                    <p>SIMAT est un projet de l'Armée de Terre composé de plusieurs modules. Parmi eux, SIMAT NOMADE est une application Android dédiée au référencement des équipements militaires. L'objectif principal de notre mission était d'assurer le développement de nouvelles fonctionnalités tout en garantissant la maintenance et l'amélioration continue de l'application.</p>
+                    <h2>Présentation et définition du projet</h2>
+                    <p>Dans le cadre d'un projet stratégique mené pour le compte de l'Armée de Terre, j'ai participé au développement du module SIMAT NOMADE, une application mobile Android intégrée à l'écosystème plus large du système d'information SIMAT (Système d'Information de Maintenance de l'Armée de Terre). Ce module a été conçu pour permettre la gestion opérationnelle des équipements militaires en situation de mobilité, tant sur le territoire national qu'en opération extérieure (OPEX). Mon intervention a porté à la fois sur le développement de nouvelles fonctionnalités, la maintenance corrective et évolutive de l'application, ainsi que sur l'amélioration de l'expérience utilisateur en environnement contraint.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Technologies</h2>
-                    <p>Le projet a été développé sur un environnement mobile Android pour faciliter les interactions utilisateur dans de grands entrepôts en France ou bien en OPEX. L'application communique avec une API Java qui récupère les informations envoyées par des scanners afin de les afficher sur les différents formats de téléphone.</p>
+                    <h2>Objectifs, contexte, enjeux, risques</h2>
+                    <p>L'objectif principal du projet était de fournir aux logisticiens de l'Armée de Terre un outil mobile fiable, ergonomique et performant, capable de fonctionner en autonomie partielle, c'est-à-dire sans connexion réseau permanente. Ce besoin répond à une problématique opérationnelle bien réelle : dans de nombreux sites de stockage, notamment en entrepôt militaire ou en OPEX, les infrastructures réseau sont limitées voire inexistantes. Il était donc crucial de garantir la robustesse de l'application en mode déconnecté, tout en assurant la synchronisation avec une base centrale dès que possible.</p>
+                    <p>L'enjeu stratégique résidait dans l'amélioration de la traçabilité des équipements, la fluidification des opérations logistiques et la réduction des erreurs humaines. Un des risques identifiés était la forte dépendance à l'ergonomie mobile dans un contexte d'usage intensif : les utilisateurs ne sont pas des techniciens, mais des personnels de terrain devant accéder rapidement à des données précises. Un autre risque concernait la sensibilité des données, relevant de la Défense nationale, imposant des protocoles de sécurité stricts et un cloisonnement rigoureux de l'architecture logicielle.</p>
+                </div>
+
+
+
+                <div class="realisation-section">
+                    <h2>Étapes</h2>
+                    <p>Dès mon intégration au sein de l'équipe projet, j'ai été impliqué dans l'analyse technique de l'existant. L'application SIMAT NOMADE, déjà partiellement développée, s'appuyait sur un environnement Android natif avec une communication via une API Java vers les serveurs de l'infrastructure militaire. Ces échanges permettaient de récupérer les données liées aux équipements, scannés au préalable à l'aide de terminaux mobiles dotés de lecteurs de code-barres.</p>
+                    <p>J'ai d'abord travaillé à la correction de plusieurs bug signalés par les utilisateurs lors des phases de tests en environnement réel. Il s'agissait notamment de problèmes d'affichage sur des formats de téléphones variés et d'incohérences de synchronisation entre les bases locales SQLite embarquées et les bases centrales. J'ai ensuite développé de nouvelles fonctionnalités, comme une carte de prévisualisation des véhicules, ou encore des éléments sonore pour vérifier la validité des puces des équipements. Ces ajouts ont nécessité une compréhension fine des flux de données, mais également une collaboration étroite avec les concepteurs de l'API Java des lecteur scanner afin d'harmoniser les formats de réponse JSON sur l'application mobile.</p>
+                    <p>Tout au long du projet, j'ai veillé à respecter les principes de la méthode agile SCRUM : participation aux réunions de sprint, rédaction de tickets JIRA, documentation technique sur Confluence, relectures de merge requests via GitLab. Le cycle de développement incluait des tests unitaires automatisés sur Android Studio, ainsi que des tests utilisateurs en conditions simulées dans des entrepôts de l'Armée.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Client</h2>
-                    <p>L'Armée de Terre a fait appel à l'entreprise de service numérique SOPRA STERIA pour concevoir un nouveau module dans le projet SIMAT nommé "Nomade", qui a pour but d'améliorer la gestion des stocks.</p>
+                    <h2>Acteurs et interactions</h2>
+                    <p>Le projet a été conduit par SOPRA STERIA, une Entreprise de Services du Numérique (ESN) partenaire de longue date de l'État. J'ai été intégré à une équipe pluridisciplinaire composée de développeurs Android, d'experts en backend Java, de chefs de projet techniques et fonctionnels, ainsi que de référents métiers de l'Armée de Terre. La communication au sein de l'équipe reposait sur des points quotidiens et hebdomadaires, en visioconférence ou en présentiel selon les phases du projet.</p>
+                    <p>Mon rôle m'a amené à interagir directement avec le Product Owner côté Armée, ce qui m'a permis de mieux comprendre les attentes terrain et d'intégrer des feedbacks concrets. Cette proximité avec les utilisateurs finaux a été essentielle pour adapter les développements à des contraintes réel du terrain.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Objectifs, contexte et enjeux</h2>
-                    <p>L'application SIMAT NOMADE permet à l'Armée de Terre de mieux gérer ses stocks, aussi bien sur le territoire national qu'en opération extérieure. Grâce à une base de données locale, elle offre une meilleure visibilité sur l'inventaire, même dans des environnements à connectivité limitée. L'un des principaux enjeux du projet était de garantir un outil fiable, rapide et simple d'utilisation pour les équipes sur le terrain.</p>
+                    <h2>Résultats</h2>
+                    <p>Sur le plan technique, l'application a connu une nette amélioration de ses performances, notamment en matière de rapidité de chargement, de stabilité en mode déconnecté et de précision des données synchronisées. Les nouvelles fonctionnalités ont été validées et intégrées dans la version de production, déployée sur plusieurs sites pilotes en France et à l'étranger. Cette évolution a permis de réduire les temps de traitement logistique de près de 30 % selon les premiers retours d'expérimentation.</p>
+                    <p>À titre personnel, cette mission m'a offert une immersion concrète dans un environnement exigeant, avec des standards élevés de qualité logicielle et de sécurité informatique. J'ai pu renforcer ma maîtrise du développement mobile Android, approfondir l'utilisation des APIs REST en Java, et développer ma capacité à travailler dans un cadre normatif strict, propre aux projets de Défense.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Rôle dans le projet</h2>
-                    <p>En tant que stagiaire développeur full stack, j'ai contribué à la mise en place et à l'amélioration des différentes fonctionnalités de l'application. Mon travail consistait à développer des solutions adaptées aux besoins des utilisateurs, corriger les éventuels dysfonctionnements et assurer une évolution continue de l'application en collaboration avec l'équipe de développement.</p>
-                </div>
-
-                <div class="realisation-section">
-                    <h2>Processus de développement</h2>
-                    <p>Le projet a été mené en méthode agile, avec un suivi régulier des attentes du client et des ajustements progressifs en fonction des retours utilisateurs. Cette approche a permis d'optimiser le développement et d'assurer une amélioration continue de l'application.</p>
-                </div>
-
-                <div class="realisation-section">
-                    <h2>Fonctionnalités principales</h2>
-                    <p>L'une des fonctionnalités essentielles de SIMAT NOMADE est l'intégration d'un scanner permettant d'ajouter automatiquement les références des équipements à la base de données. Cette fonctionnalité facilite la gestion des stocks et améliore l'efficacité des opérations logistiques.</p>
+                    <h2>Lendemains du projet</h2>
+                    <p>À l'issue de mon intervention, le module SIMAT NOMADE est entré en phase de généralisation, avec une feuille de route d'extensions fonctionnelles sur plusieurs années. Mon travail a été documenté et transféré aux équipes internes de SOPRA STERIA pour assurer la continuité du développement. L'application est amenée à évoluer vers une compatibilité avec des terminaux tactiques spécifiques à l'Armée, ainsi qu'à intégrer des fonctionnalités d'intelligence artificielle pour optimiser la gestion prédictive des stocks.</p>
+                    <p>Cette mission a aussi été l'occasion pour moi de mieux comprendre le rôle des ESN dans le paysage technologique français, en particulier leur capacité à répondre à des appels d'offres complexes et à s'inscrire dans des projets d'envergure nationale.</p>
                 </div>
 
                 <div class="realisation-section">
                     <h2>Compétences associées</h2>
-                    <p>Ce projet m'a permis de renforcer mes compétences en développement mobile avec Android et Java, ainsi qu'en gestion de bases de données et utilisation de Git. J'ai également acquis une expérience précieuse en travail d'équipe, en collaborant avec différents acteurs du projet et en prenant en compte les retours des utilisateurs pour améliorer continuellement l'application.</p>
                     <div class="skill-buttons-container">
                         <a href="../competences/java.html" class="skill-button">Java</a>
                         <a href="../competences/base-de-donnees.html" class="skill-button">Base de données</a>
@@ -114,9 +116,9 @@
                 </div>
 
                 <div class="realisation-section conclusion-section">
-                    <h2>Conclusion</h2>
-                    <p>Ce projet m'a beaucoup appris sur la notion d'autonomie dans le monde du développement et notre grande capacité de recherche et d'apprentissage.</p>
-                    <p>J'ai également beaucoup appris sur les entreprises de services numériques qui sont les plus grandes entreprises pour les développeurs.</p>
+                    <h2>Mon regard critique</h2>
+                    <p>Ce projet a représenté un tournant dans mon parcours de développeur. Il m'a appris à faire preuve d'autonomie dans un environnement complexe, à prioriser les demandes des utilisateurs et à produire un code de qualité, maintenable et documenté. J'ai pris conscience de l'importance de l'écoute active et de l'esprit d'initiative dans une équipe agile. Travailler sur une application destinée à l'Armée m'a donné un sentiment de responsabilité et de fierté. Cela m'a également sensibilisé à la rigueur nécessaire dans les projets à forte criticité, où chaque fonctionnalité doit être testée et validée en conditions réelles.</p>
+                    <p>Enfin, cette expérience a renforcé ma capacité à intégrer rapidement un projet en cours, à monter en compétences sur des outils spécifiques, et à m'adapter à un cadre professionnel structuré.</p>
                     <p>J'ai ressenti une grande fierté à contribuer pour un projet qui servira mon pays.</p>
                 </div>
             </div>
