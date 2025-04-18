@@ -37,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="../index.html">Portfolio</a>
+            <a href="../index.html">Alexandre Moulin</a>
         </div>
         <ul class="nav-links">
             <li><a href="../index.html#about">À propos</a></li>
@@ -67,43 +67,53 @@
                 </div>
                 
                 <div class="realisation-section">
-                    <h2>Mission</h2>
-                    <p>FDS Informatique, une société spécialisée dans la vente de composants informatiques, a sollicité l'équipe Popsoft pour automatiser le téléchargement du catalogue de son grossiste via une application web. L'objectif principal était de simplifier le processus et d'améliorer l'ergonomie du travail en permettant une récupération automatisée des données du fournisseur.</p>
+                    <h2>Présentation et définition du projet</h2>
+                    <p>Dans le cadre d'un projet académique, notre équipe a été sollicitée par la société FDS Informatique, un revendeur de composants informatiques, pour concevoir une application web permettant l'automatisation de la récupération de son catalogue fournisseur. Ce projet, nommé POPSOFT, visait à supprimer les tâches manuelles liées à la mise à jour régulière des produits, souvent fastidieuses et sources d'erreurs, en mettant en place un système de récupération automatisée des données via un serveur FTP, et leur conversion dans un fichier Excel structuré.</p>
+                    <p>L'enjeu central consistait à offrir une solution légère, performante, et facilement intégrable au processus quotidien de gestion du catalogue, en permettant au personnel de FDS Informatique de disposer de fichiers prêts à l'emploi, régulièrement mis à jour.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Technologies</h2>
-                    <p>Nous avons utilisé Angular pour le front-end de l'application, un front-end très léger. Par la suite, le plus gros de l'application est fait en Java car il fallait récupérer les données vers la base d'un grossiste et faire un algorithme pour exporter ces données vers un Excel.</p>
+                    <h2>Objectifs, contexte, enjeux, risques</h2>
+                    <p>Le projet POPSOFT a été initié dans un contexte de modernisation des outils internes utilisés par FDS Informatique. L'entreprise, bien qu'à taille humaine, traite un volume conséquent de références produits, provenant de grossistes spécialisés, et gère régulièrement des mises à jour de prix, de stocks et de fiches techniques. Jusqu'à présent, ces informations étaient récupérées manuellement depuis des fichiers fournis via FTP, puis retraitées en interne pour mise à jour du catalogue.</p>
+                    <p>L'objectif du projet était donc de concevoir une application web capable d'automatiser cette récupération de données, en se connectant de façon sécurisée à un serveur FTP, en traitant les fichiers reçus (souvent au format CSV ou TXT brut), puis en générant automatiquement un fichier Excel exploitable, contenant les données filtrées et structurées selon les besoins de l'entreprise.</p>
+                    <p>Ce projet représentait un défi technique particulier, notamment du fait de l'usage du protocole FTP en environnement de production, un sujet rarement abordé dans notre formation jusqu'alors. Il impliquait une bonne compréhension des mécanismes de transfert de fichiers, de traitement asynchrone, ainsi que des structures de données manipulées. L'un des risques techniques principaux concernait la stabilité et la sécurité du traitement, en cas d'indisponibilité temporaire du serveur FTP ou de fichier mal formé.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Client</h2>
-                    <p>FDS informatique est un revendeur de composants informatiques en général. Il propose aussi des services pour des réparations générales dans ce milieu.</p>
+                    <h2>Étapes</h2>
+                    <p>Le projet a démarré par une phase de découverte du besoin client, avec des échanges réguliers avec notre commanditaire chez FDS Informatique. Nous avons recueilli les informations essentielles : fréquence des mises à jour, format des fichiers envoyés par le grossiste, organisation attendue du fichier Excel final, et contraintes liées à l'utilisation de l'outil par des non-techniciens.</p>
+                    <p>Sur le plan technique, nous avons choisi de développer une application web légère, avec une interface simple en Angular, permettant à l'utilisateur de déclencher manuellement une synchronisation à tout moment, tout en affichant l'état de la récupération (en cours, réussie, ou erreur).</p>
+                    <p>Le backend a été conçu en Java, avec des modules dédiés pour :</p>
+                    <ul>
+                        <li>La connexion sécurisée au serveur FTP,</li>
+                        <li>La récupération et la lecture du fichier brut envoyé par le grossiste,</li>
+                        <li>Le traitement des données : filtrage, reformatage, transformation en tableau structuré,</li>
+                        <li>L'export final au format Excel (.xls) via des bibliothèques comme Apache POI.</li>
+                    </ul>
+                    <p>J'ai personnellement participé à la conception de l'algorithme de traitement, permettant de parser les données reçues (souvent brutes, avec des délimitations variables), d'en extraire les champs nécessaires (références, prix HT, disponibilité, etc.), et de les organiser proprement dans des feuilles Excel, avec mise en forme et types de colonnes adaptés.</p>
+                    <p>Le projet a été conduit selon une approche agile, avec des itérations courtes permettant d'intégrer régulièrement les retours de notre "client". Chaque sprint se terminait par une phase de test de bout en bout : connexion au FTP, récupération d'un fichier test, traitement des données et génération d'un fichier Excel conforme.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Objectifs, contexte et enjeux</h2>
-                    <p>Le principal défi du projet était d'intégrer un système de récupération des données en production via une clé FTP, une approche totalement nouvelle pour notre équipe et inédite dans notre cursus. Ce projet représentait donc une opportunité d'apprentissage technique, nécessitant une compréhension approfondie des protocoles FTP et des échanges de données en environnement de production.</p>
+                    <h2>Acteurs et interactions</h2>
+                    <p>Notre équipe projet était constituée d'étudiants aux rôles complémentaires, répartis entre front-end, back-end et gestion du planning. J'ai occupé le rôle de développeur Full Stack, avec une dominante sur le backend Java, tout en contribuant à la mise en place de l'interface Angular et à la gestion des flux de données entre les composants.</p>
+                    <p>L'interaction client (représentée par notre formateur) a joué un rôle important pour nous confronter à une posture professionnelle : prise en compte de demandes spécifiques, adaptation des formats de fichiers en cours de projet, et gestion d'imprévus (par exemple, un changement dans le format du fichier fournisseur au milieu du développement).</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Rôle dans le projet</h2>
-                    <p>En tant que développeur Full Stack Angular/Java, j'ai participé activement à la conception et à la mise en place de cette automatisation. Mon travail a consisté à développer les fonctionnalités permettant d'extraire et de traiter les données du fournisseur tout en assurant leur transfert vers un fichier Excel utilisable par l'entreprise.</p>
+                    <h2>Résultats</h2>
+                    <p>L'application livrée à la fin du projet remplissait l'ensemble des objectifs initiaux. L'interface web permettait à l'utilisateur de lancer une récupération FTP manuelle, de suivre le statut du téléchargement, et de télécharger instantanément un fichier Excel finalisé, sans aucune manipulation manuelle supplémentaire.</p>
+                    <p>Ce système a permis de réduire considérablement les risques d'erreurs dans le traitement des données et de gagner un temps précieux dans la mise à jour du catalogue produits. Le code source était entièrement versionné, documenté, et prêt à être repris ou déployé dans un environnement réel.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Processus de développement</h2>
-                    <p>Le projet a été mené en méthodologie Agile, avec une approche itérative permettant de valider régulièrement les développements auprès du client. Après chaque sprint, des phases de tests en production et de déploiement ont été effectuées afin d'assurer la fiabilité du système et son intégration fluide dans les processus existants de l'entreprise.</p>
-                </div>
-
-                <div class="realisation-section">
-                    <h2>Fonctionnalités principales</h2>
-                    <p>L'application développée permet la récupération automatisée des données du grossiste via FTP et leur transfert structuré vers un fichier Excel. Ce processus a considérablement amélioré la gestion du catalogue en supprimant les étapes manuelles et en garantissant une mise à jour rapide et fiable des informations produits.</p>
+                    <h2>Lendemains du projet</h2>
+                    <p>Bien que réalisé dans un cadre académique, le projet POPSOFT s'est distingué par son réalisme fonctionnel. L'application pourrait facilement être adaptée à d'autres clients confrontés à des problématiques similaires : récupération de données distantes, automatisation de traitements, génération de fichiers à usage interne.</p>
+                    <p>Le projet a été intégré à nos portfolios respectifs, et présenté comme cas d'école lors d'entretiens professionnels. Il constitue un bon exemple de transversalité entre compétences techniques et compréhension métier, et une illustration de notre capacité à développer des outils utiles, fiables et directement exploitables.</p>
                 </div>
 
                 <div class="realisation-section">
                     <h2>Compétences associées</h2>
-                    <p>Ce projet m'a permis d'acquérir de nouvelles compétences, notamment sur l'exploitation des protocoles FTP en environnement de production et l'automatisation des échanges de données. Travailler en Angular et Java dans un contexte de développement Full Stack m'a également permis de renforcer mes compétences techniques et ma capacité à m'adapter à de nouveaux défis.</p>
                     <div class="skill-buttons-container">
                         <a href="../competences/java.html" class="skill-button">Java</a>
                         <a href="../competences/angular.html" class="skill-button">Angular</a>
@@ -112,8 +122,10 @@
                 </div>
 
                 <div class="realisation-section conclusion-section">
-                    <h2>Conclusion</h2>
-                    <p>L'interaction directe avec le client a été un aspect clé du projet, me permettant d'améliorer ma communication et ma capacité à adapter les développements aux besoins réels de l'entreprise.</p>
+                    <h2>Mon regard critique</h2>
+                    <p>Le projet POPSOFT m'a permis de franchir une nouvelle étape dans ma maîtrise de Java back-end, en m'attaquant à des problématiques concrètes liées à la récupération et la transformation de données externes. J'ai également beaucoup appris sur l'exploitation du protocole FTP, sujet rarement abordé dans le cursus standard, mais essentiel dans de nombreux systèmes informatiques en entreprise.</p>
+                    <p>Travailler sur un projet à finalité métier claire, avec un client d'entreprise, m'a permis d'améliorer ma capacité à comprendre un besoin, à formuler des solutions adaptées, et à maintenir un dialogue technique compréhensible pour des interlocuteurs non développeurs.</p>
+                    <p>Enfin, ce projet a renforcé ma confiance dans la gestion complète d'un processus technique, de la connexion réseau à la restitution des données sous forme exploitable, en passant par l'automatisation du traitement. Il a été l'occasion d'un apprentissage concret, motivant, et riche en enseignements.</p>
                 </div>
             </div>
         </div>
@@ -124,7 +136,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Portfolio</h3>
+                    <h3>Alexandre Moulin</h3>
                     <p>Développeur Full Stack</p>
                 </div>
                 <div class="footer-links">
@@ -149,7 +161,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
+                <p>&copy; 2025 Alexandre Moulin. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

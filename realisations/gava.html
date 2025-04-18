@@ -37,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="../index.html">Portfolio</a>
+            <a href="../index.html">Alexandre Moulin</a>
         </div>
         <ul class="nav-links">
             <li><a href="../index.html#about">À propos</a></li>
@@ -67,44 +67,50 @@
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Mission</h2>
-                    <p>La Gendarmerie Nationale a souhaité organiser un tournoi eSport dans un cadre ludique afin de sensibiliser le public au cyberharcèlement. Pour mener à bien cet événement, un site web dédié à l'organisation et à la gestion des tournois était nécessaire.</p>
+                    <h2>Présentation et définition du projet ou de la réalisation</h2>
+                    <p>Dans le cadre d'un partenariat pédagogique fictif avec la Gendarmerie Nationale, notre équipe a été chargée de concevoir une application web de gestion de tournoi eSport, destinée à sensibiliser les jeunes utilisateurs aux dangers du cyberharcèlement. Le projet, baptisé GAVA, visait à promouvoir un usage responsable d'Internet dans un contexte ludique et participatif.</p>
+                    <p>Pour mener à bien ce projet, nous avons développé une plateforme numérique complète, permettant d'organiser, d'administrer et de suivre des compétitions de jeux vidéo en ligne. L'application devait proposer un parcours utilisateur fluide, une gestion automatisée des matchs et une interface moderne, tout en respectant les standards de sécurité élémentaires relatifs à la protection des données personnelles.</p>
                 </div>
 
                 <div class="realisation-section">
-                    <h2>Technologies</h2>
-                    <p>Dans ce projet nous avons utilisé Angular.ts pour la partie front avec des parties d'animation en Javascript. Pour la partie back-end, pour communiquer avec la base de données, nous avons utilisé du JEE et du JAVA.</p>
+                    <h2>Objectifs, contexte, enjeux, risques</h2>
+                    <p>Le projet GAVA s'inscrivait dans une démarche de prévention citoyenne, dans laquelle le numérique joue un rôle central. L'idée était d'utiliser le vecteur attractif du jeu vidéo pour capter l'attention d'un public jeune et le sensibiliser aux risques liés au cyberharcèlement, en particulier sur les réseaux sociaux et les plateformes de jeu en ligne.</p>
+                    <p>L'objectif principal était de livrer, en l'espace de six mois, une application fonctionnelle développée from scratch, capable de gérer toutes les phases d'un tournoi : inscriptions, création des matchs, affichage dynamique des résultats, génération automatique d'un arbre de compétition, et administration des utilisateurs. Le tout devait être développé dans un environnement pédagogique, avec les contraintes techniques et organisationnelles d'un projet professionnel simulé.</p>
+                    <p>Les enjeux étaient multiples : réussir à mettre en œuvre un algorithme de gestion de tournoi suffisamment souple pour supporter différents formats de compétition, garantir un niveau de sécurité minimal pour la gestion des comptes utilisateurs, et respecter un planning de développement agile malgré un temps de travail restreint. Le risque principal résidait dans la complexité fonctionnelle du projet, combinée à une charge de travail importante pour une équipe étudiante.</p>
                 </div>
 
-                <div class="realisation-section">
-                    <h2>Client</h2>
-                    <p>La gendarmerie nationale du secteur cybersécurité est de plus en plus amenée à sensibiliser les utilisateurs français dans leur utilisation d'internet. Dans ce projet, j'ai occupé un double rôle : Scrum Master et développeur Full Stack. J'ai ainsi participé au développement du site tout en assurant la coordination de l'équipe et la mise en place d'un environnement de travail agile.</p>
-                </div>
+ 
 
                 <div class="realisation-section">
-                    <h2>Objectifs, contexte et enjeux</h2>
-                    <p>L'un des principaux défis du projet a été l'implémentation d'un système avancé d'organisation de tournois, avec un algorithme complexe pour gérer les matchs et un arbre de compétition dynamique. La protection des données était également une priorité, afin d'assurer la sécurité des utilisateurs et la conformité aux normes en vigueur. Ce projet représentait un véritable challenge technique, car l'application était développée from scratch et devait être entièrement opérationnelle en seulement six mois.</p>
+                    <h2>Étapes</h2>
+                    <p>Le projet a démarré par une phase de cadrage fonctionnel, durant laquelle nous avons défini les besoins essentiels du site à partir d'un cahier des charges fictif fourni par le "client" (notre référent pédagogique jouant le rôle de la Gendarmerie). Nous avons ensuite réalisé une première maquette du site via Figma afin de valider les choix ergonomiques et les parcours utilisateurs.</p>
+                    <p>Sur le plan technique, nous avons opté pour une architecture Full Stack. Le front-end a été développé en Angular (TypeScript), complété par des animations personnalisées en JavaScript pur afin d'enrichir l'expérience utilisateur, notamment pour l'arbre de tournoi et les effets de transitions. Le back-end reposait sur Java EE, avec l'utilisation de servlets et de JSP, communiquant avec une base de données relationnelle via JDBC.</p>
+                    <p>J'ai participé activement à la conception de l'algorithme central de gestion des matchs. Celui-ci permettait de générer dynamiquement un arbre de tournoi à élimination directe, en prenant en compte le nombre de participants, l'ordre des matchs et la progression automatique des joueurs. L'algorithme assurait également le recalcul des rencontres après chaque victoire, jusqu'à la finale.</p>
+                    <p>En parallèle, nous avons implémenté un système d'inscription sécurisé, avec gestion des sessions utilisateur, validation des champs côté client et serveur, et protection des données en base. Des tests manuels ont été réalisés à chaque sprint pour garantir la cohérence fonctionnelle, la stabilité de l'interface, et la compatibilité avec les navigateurs courants.</p>
                 </div>
-
+                
                 <div class="realisation-section">
-                    <h2>Rôle dans le projet</h2>
-                    <p>En tant que Scrum Master, mon rôle a été d'assurer la mise en place et le suivi de la méthodologie agile, en veillant à la bonne organisation de l'équipe et à l'optimisation des processus de développement. La coordination et l'animation des réunions étaient essentielles pour maintenir un bon rythme de travail et assurer une communication fluide entre les membres du projet.</p>
-                    <p>En parallèle, j'ai également occupé le rôle de développeur Full Stack, en contribuant activement à la conception et à l'implémentation des fonctionnalités du site.</p>
+                    <h2>Acteurs et interactions</h2>
+                    <p>Notre équipe de projet était composée de six étudiants, répartis en rôles spécifiques. En plus de mon rôle de développeur Full Stack, j'ai été désigné Scrum Master, ce qui impliquait la mise en œuvre concrète de la méthodologie agile tout au long du développement.</p>
+                    <p>J'ai organisé les réunions de sprint planning, assuré la tenue des dailys, suivi l'avancement des tâches via un tableau Trello, et veillé à maintenir une bonne communication entre les membres du groupe. Mon rôle consistait également à identifier les blocages techniques ou organisationnels et à proposer des solutions pour y remédier rapidement.</p>
+                    <p>La collaboration s'est faite dans un climat bienveillant et productif, avec un effort collectif constant pour respecter les délais. Les décisions techniques ont été prises de manière collégiale, mais j'ai régulièrement joué un rôle de facilitateur et de référent, en particulier pour les parties critiques du code ou les arbitrages liés au respect du planning.</p>
                 </div>
-
+                
                 <div class="realisation-section">
-                    <h2>Processus de développement</h2>
-                    <p>Le développement s'est déroulé sur un cycle agile, avec des sprints d'un mois permettant une évolution progressive du projet. L'application, développée en Angular et Java, nécessitait une approche rigoureuse pour tenir les délais et livrer une solution complète en seulement six mois.</p>
+                    <h2>Résultats</h2>
+                    <p>L'application GAVA a été livrée dans les délais impartis, avec l'ensemble des fonctionnalités prévues dans le cahier des charges. Le site permettait de créer et gérer un tournoi en ligne de bout en bout, avec une interface claire et dynamique, un système d'inscription fonctionnel, et un arbre de tournoi généré automatiquement en fonction des données saisies.</p>
+                    <p>Sur le plan technique, l'équipe a su mettre en œuvre un projet complet, du front au back-end, en partant d'une base vide. Cette réussite a été saluée par notre encadrant et les autres groupes d'étudiants lors de la soutenance finale. Le projet a démontré notre capacité collective à nous organiser de façon agile, à concevoir une solution cohérente, et à délivrer une application web viable malgré les contraintes.</p>
+                    <p>Pour ma part, ce projet m'a permis d'enrichir significativement mes compétences en développement Full Stack, mais aussi en gestion d'équipe et coordination de projet. J'ai pu me familiariser davantage avec la posture de Scrum Master, en assurant le bon fonctionnement du cadre méthodologique tout en contribuant activement au développement technique.</p>
                 </div>
-
+                
                 <div class="realisation-section">
-                    <h2>Fonctionnalités principales</h2>
-                    <p>L'application a permis de mettre en place un système d'arbre de tournoi dynamique permettant de gérer l'organisation des matchs de manière fluide. Un module d'inscription sécurisé a également été développé, garantissant une expérience utilisateur fluide et conforme aux exigences du projet.</p>
+                    <h2>Lendemains du projet</h2>
+                    <p>Même s'il s'agissait d'un projet scolaire, plusieurs membres de l'équipe ont souhaité réutiliser tout ou partie de l'application pour d'autres projets ou portfolios. Le code source a été versionné via GitHub, et une documentation technique a été rédigée pour permettre la compréhension et la réutilisation du travail effectué.</p>
+                    <p>L'expérience acquise dans GAVA a servi de tremplin pour d'autres projets plus complexes, en entreprise ou à l'école, et constitue un bon exemple de réalisation concrète à présenter dans un cadre professionnel. Elle illustre notre capacité à conduire un projet complet en conditions simulées, avec un niveau d'exigence élevé, tant sur le plan technique qu'organisationnel.</p>
                 </div>
 
                 <div class="realisation-section">
                     <h2>Compétences associées</h2>
-                    <p>Ce projet m'a permis de développer des compétences précieuses en gestion d'équipe et en méthodologie agile grâce à mon rôle de Scrum Master. J'ai également approfondi mes compétences en développement Full Stack, en travaillant avec Angular et Java sur une application complète, tout en assurant la sécurité et l'optimisation des performances.</p>
                     <div class="skill-buttons-container">
                         <a href="../competences/java.html" class="skill-button">Java</a>
                         <a href="../competences/angular.html" class="skill-button">Angular</a>
@@ -115,8 +121,10 @@
                 </div>
 
                 <div class="realisation-section conclusion-section">
-                    <h2>Conclusion</h2>
-                    <p>L'expérience acquise sur ce projet a renforcé ma capacité à travailler en équipe, à gérer des défis techniques et à évoluer dans un environnement exigeant, tout en gardant une vision globale du projet.</p>
+                    <h2>Mon regard critique</h2>
+                    <p>Ce projet m'a permis d'explorer pleinement le rôle de Scrum Master, dans un cadre concret et dynamique. J'ai pu développer une vraie posture de coordination, tout en conservant un fort engagement technique en tant que développeur Full Stack. J'ai également appris à gérer les imprévus, à répartir les charges efficacement et à communiquer clairement les priorités au sein d'un groupe.</p>
+                    <p>D'un point de vue personnel, ce projet m'a permis de renforcer mes compétences en Angular, en Java EE, et en gestion de base de données relationnelle. Il m'a aussi donné l'occasion de progresser en gestion de projet agile, avec des outils simples mais efficaces (Trello, GitHub, sprint reviews...).</p>
+                    <p>Enfin, j'ai trouvé une réelle satisfaction à travailler sur un projet qui, même dans un cadre simulé, portait un message de sensibilisation citoyenne fort et utile. Cela a renforcé mon intérêt pour les projets numériques ayant un impact social ou éducatif.</p>
                 </div>
             </div>
         </div>
@@ -127,7 +135,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Portfolio</h3>
+                    <h3>Alexandre Moulin</h3>
                     <p>Développeur Full Stack</p>
                 </div>
                 <div class="footer-links">
